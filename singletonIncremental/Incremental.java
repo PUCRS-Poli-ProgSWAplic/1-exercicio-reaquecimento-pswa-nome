@@ -1,10 +1,11 @@
+package singletonIncremental;
 public class Incremental{
     private static Incremental instance;
     private static int count = 0;
     private int num;
 
     private Incremental(){
-        num = ++count;
+        num = count;
     }
 
     public static Incremental getInstance(){
